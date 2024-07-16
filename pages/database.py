@@ -104,7 +104,10 @@ if 'All' not in seasons and seasons:
 filtered_df = filtered_df[
     (filtered_df['Age'].between(age[0], age[1])) &
     (filtered_df['Minutes'].between(minutes[0], minutes[1])) &
-    (filtered_df['Rating'].between(rating[0], rating[1]))
+    (filtered_df['Rating'].between(rating[0], rating[1])) &
+    (filtered_df['PSxG +/- per 90'].between(psxg[0], psxg[1])) &
+    (filtered_df['Crosses Stopped % per 90'].between(crosses[0], crosses[1])) &
+    (filtered_df['Def Actions Outside Penalty Area per 90'].between(defa[0], defa[1]))
 ]
 
 # Display the dataframe
