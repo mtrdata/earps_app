@@ -80,10 +80,10 @@ with col2:
     rating = st.slider("Rating", min_value=min_rating, max_value=max_rating, value=(min_rating, max_rating))
 
 with col3:
-    min_psxg, max_psxg = int(df['PSxG +/- per 90'].min()), int(df['PSxG +/- per 90'].max())
+    min_psxg, max_psxg = int(df['PSxG +/- per 90'].min()), float(df['PSxG +/- per 90'].max())
     psxg = st.slider("PSxG +/- per 90", min_value=min_psxg, max_value=max_psxg, value=(min_psxg, max_psxg))
     
-    min_crosses, max_crosses = int(df['Crosses Stopped % per 90'].min()), int(df['Crosses Stopped % per 90'].max())
+    min_crosses, max_crosses = int(df['Crosses Stopped % per 90'].min()), float(df['Crosses Stopped % per 90'].max())
     crosses = st.slider("Crosses Stopped % per 90", min_value=min_crosses, max_value=max_crosses, value=(min_crosses, max_crosses))
     
     min_defa, max_defa = float(df['Def Actions Outside Penalty Area per 90'].min()), float(df['Def Actions Outside Penalty Area per 90'].max())
