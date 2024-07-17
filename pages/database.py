@@ -111,7 +111,7 @@ filtered_df = filtered_df[
 ]
 
 # Display the dataframe
-st.dataframe(filtered_df)
+st.data_editor(filtered_df)
 
 # Shows the number of records displayed & explainer message
 st.write(f"Showing {len(filtered_df)} out of {len(df)} records. These records can be downloaded as a CSV file. Hover over the dataframe.")
