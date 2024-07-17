@@ -110,8 +110,9 @@ filtered_df = filtered_df[
     (filtered_df['Def Actions Outside Penalty Area per 90'].between(defa[0], defa[1]))
 ]
 
-# Display the dataframe
-st.data_editor(filtered_df)
-
-# Shows the number of records displayed & explainer message
-st.write(f"Showing {len(filtered_df)} out of {len(df)} records. These records can be downloaded as a CSV file. Hover over the dataframe.")
+with st.container(width=600):
+    # Display the dataframe
+    st.data_editor(filtered_df)
+    
+    # Shows the number of records displayed & explainer message
+    st.write(f"Showing {len(filtered_df)} out of {len(df)} records. These records can be downloaded as a CSV file. Hover over the dataframe.")
