@@ -156,6 +156,8 @@ with col1:
     st.markdown(f'<p class="big-font">Total Seasons of Data<br><span class="metric">{total_seasons_player1}</span></p>', unsafe_allow_html=True)
     st.markdown(f'<p class="big-font">Average Minutes per Season<br><span class="metric">{avg_minutes_player1}</span></p>', unsafe_allow_html=True)
     st.write("---")
+    # Subheader for Player 1
+    st.markdown("<h2 style='text-align: center; color: #FFF;'>Average Metrics Across All Seasons</h2>", unsafe_allow_html=True)
     st.markdown(f'<p class="big-font">PSxG +/- per 90<br><span class="metric">{avg_psxg_player1}</span></p>', unsafe_allow_html=True)
     st.markdown(f'<p class="big-font">Crosses Stopped % per 90<br><span class="metric">{avg_crosses_stopped_player1}</span></p>', unsafe_allow_html=True)
     st.markdown(f'<p class="big-font">Def Actions Outside Penalty Area per 90<br><span class="metric">{avg_def_actions_outside_pa_player1}</span></p>', unsafe_allow_html=True)
@@ -169,6 +171,8 @@ with col2:
     st.markdown(f'<p class="big-font-2">Total Seasons of Data<br><span class="metric">{total_seasons_player2}</span></p>', unsafe_allow_html=True)
     st.markdown(f'<p class="big-font-2">Average Minutes per Season<br><span class="metric">{avg_minutes_player2}</span></p>', unsafe_allow_html=True)
     st.write("---")
+    # Subheader for Player 2
+    st.markdown("<h2 style='text-align: center; color: #FFF;'>Average Metrics Across All Seasons</h2>", unsafe_allow_html=True)
     st.markdown(f'<p class="big-font-2">PSxG +/- per 90<br><span class="metric">{avg_psxg_player2}</span></p>', unsafe_allow_html=True)
     st.markdown(f'<p class="big-font-2">Crosses Stopped % per 90<br><span class="metric">{avg_crosses_stopped_player2}</span></p>', unsafe_allow_html=True)
     st.markdown(f'<p class="big-font-2">Def Actions Outside Penalty Area per 90<br><span class="metric">{avg_def_actions_outside_pa_player2}</span></p>', unsafe_allow_html=True)
